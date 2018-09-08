@@ -27,6 +27,7 @@ h2 {
   font-size: 26px;
   text-transform: uppercase;
   font-weight: 500;
+  margin-bottom: 25px;
 }
 
 h3 {
@@ -34,6 +35,7 @@ h3 {
   text-transform: uppercase;
   font-weight: 500;
   color: #445b5a;
+  margin-bottom: 15px;
 
   &.underlined {
     border-bottom: 1px solid @darkgrey;
@@ -48,6 +50,8 @@ h4 {
   text-transform: uppercase;
   font-weight: 500;
   color: #808080;
+  margin-top: 25px;
+  margin-bottom: 3px;
 }
 
 h5 {
@@ -58,11 +62,26 @@ h5 {
 p {
   font-size: 16px;
   font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+small {
+  font-size: 14px;
+  font-weight: 300;
+  display: block;
 }
 
 ol {
   font-size: 16px;
   font-weight: 300;
+  padding-left: 7px;
+  margin-left: 9px;
+  margin-bottom: 35px;
+
+  li {
+    padding: 10px;
+  }
 }
 
 ul {
@@ -112,4 +131,11 @@ strong {
 // grey background
 .container-grey {
   background-color: @lightestgrey;
+}
+
+// column divider line
+.coldivider {
+  border-left: 1px solid @darkgrey;
+  padding-left: 50px;
+  margin-left: 20px;
 }
