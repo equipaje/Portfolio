@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "scripts": {
+    "gen": "grunt gen",
+    "watch": "grunt watch",
+    "serve": "grunt devserver:dist"
+  },
+  "author": "equipaje",
+  "devDependencies": {
+    "bootstrap": "^4.1.3",
+    "eslint": "^5.5.0",
+    "grunt": "^1.0.3",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-devserver": "^0.6.0",
+    "grunt-markdown": "github:dabutvin/grunt-markdown#marked",
+    "jquery": "^3.3.1"
+  }
+}
