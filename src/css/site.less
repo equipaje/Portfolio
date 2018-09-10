@@ -140,3 +140,39 @@ strong {
   padding-left: 50px;
   margin-left: 20px;
 }
+
+//overly complicated list with yellow circle numbers
+.fancylist {
+  counter-reset: fancycounter;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  h4 {
+    display: inline;
+    margin-left: 15px;
+  }
+
+  small {
+    margin-left: 15px;
+  }
+
+  li {
+    position: relative;
+    counter-increment: fancycounter;
+
+    &::before {
+      background-color: #cca52c;
+      border-radius: 30px;
+      color: #fff;
+      content: counter(fancycounter);
+      font-size: 11px;
+      height: 16px;
+      left: 0;
+      position: absolute;
+      text-align: center;
+      top: 14px;
+      width: 16px;
+    }
+  }
+}
