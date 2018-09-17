@@ -169,3 +169,67 @@
             <img class="ml-5" alt="placeholder" src="http://placekitten.com/350/250"> </div>
     </div>
 </div>
+
+<!-- Project Manager -->
+<div class="container-grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <h2>Project Manager</h2>
+                <br>
+                <h3 class="underlined mt-3">Tasks</h3>
+                <ul class="pluslist">
+                    <li>Coordinating work across teams and organizations within Microsoft</li>
+                    <li>Solving technical problems</li>
+                    <li>Driving timelines for the project</li>
+                    <li>Ensuring high standard and compliance for privacy, security, globalization, and accessibility</li>
+                </ul>
+            </div>
+            <div class="col-md">
+                <h2>Major Challenges</h2>
+                <h3>1. User Trust</h3>
+                <p><b>Problem:</b> Machine Learning models are not perfect, and it might be difficult for someone who
+                    is blind to understand whether or not they should trust a caption.</p>
+                <br>
+                <p><b>Solution:</b> Once a description was generated, we appended text that marks the description as
+                    being machine generated.</p>
+                <br>
+                <p>We also included a confidence rating so that screen reader users can make better decisions about
+                    trusting the alt text.</p>
+                <br>
+                <h5>"Description generated with very high confidence"</h5>
+                <!--Style this better-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>2. Automatic Caption Quality</h3>
+                <div class="row">
+                    <div class="col-md">
+                        <img alt="placeholder" src="http://placekitten.com/200/375">
+                    </div>
+                    <div class="col-md-7">
+                        <p><b>Problem:</b> The Computer Vision model we were using was originally trained almost
+                            exclusively with social media content. It was extremely bad at recognizing the professional
+                            content that someone would insert into an Office document. We thought this problem might
+                            block the entire project from continuing.</p>
+                        <br>
+                        <p><b>Solution:</b> We built a web app to help curate a set of nearly 100,000 photos to be used
+                            to train the image captioning Machine Learning model. When re-trained, the model
+                            demonstrated a 30% increase in coverage in describing a random set of professional photos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <h3>3. Gathering Feedback</h3>
+                <p><b>Problem:</b> A key component of intelligent systems is collecting feedback so that the system can
+                    improve over time. There are many privacy regulations that prevent gathering the data we would need
+                    to improve Automatic Alt Text.</p>
+                <p><b>Solution:</b> We created an opt-in only feedback loop that allows users to donate their images to
+                    us. We made sure that we were following privacy guidelines, and that the information given to us
+                    was being stored securely.</p>
+                <img class="ml-5" alt="placeholder" src="http://placekitten.com/350/250">
+            </div>
+        </div>
+    </div>
+</div>
