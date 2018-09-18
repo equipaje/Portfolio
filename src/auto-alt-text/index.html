@@ -4,7 +4,8 @@
         <div class="col-sm">
             <h1>Automatic Alt Text</h1>
             <h2 class="h5 mt-3">Redesigning Alt Text for Microsoft Office</h2>
-            <img class="mt-5" alt="placeholder" src="http://placekitten.com/600/400">
+            <img class="mt-5" alt="Mockup of a computer with auto alt text in PowerPoint captioning a photo of two polar bears."
+                src="/images/Auto_Alt_Text/title_image.png">
         </div>
     </div>
 </div>
@@ -65,7 +66,8 @@
                 consumption in Office.</p>
         </div>
         <div class="col text-center">
-            <img alt="placeholder" src="http://placekitten.com/200/300">
+            <img alt="Screenshot of the original alt text UI with a title field and a description field beneath a series of menus."
+                src="/images/Auto_Alt_Text/fotp.png">
         </div>
         <div class="row mt-4 mt-md-5">
             <div class="col-sm">
@@ -123,7 +125,7 @@
                             <li><b>Inconsistent Experience:</b> Alt Text is not always read in a consistent way with
                                 screen readers and other assistive technologies</li>
                             <li><b>Not Enough Alt Text:</b> Most documents don't have alt text at all, which causes
-                                frustration</b>></li>
+                                frustration</b></li>
                         </ul>
                     </div>
                 </div>
@@ -135,7 +137,7 @@
                                 of wasted time navigating through menus repeatedly</li>
                             <li><b>Authoring is Confusing</b> Alt Text input currently allows for both a title and a
                                 description, but most screen readers only read the description reliably. This causes
-                                confusion around which field should be used and when</b>></li>
+                                confusion around which field should be used and when</b></li>
                             <li><b>Unsure How to Write Alt Text:</b> There is not enough guidance to support writing
                                 high quality alt text</li>
                         </ul>
@@ -166,7 +168,7 @@
                 hackathon.</p>
         </div>
         <div class="col">
-            <img class="ml-5" alt="placeholder" src="http://placekitten.com/350/250"> </div>
+            <img class="ml-5" alt="Microsoft Cognitive Services logo" src="/images/Auto_Alt_Text/cog_sci.png"> </div>
     </div>
 </div>
 
@@ -206,7 +208,8 @@
                 <h3>2. Automatic Caption Quality</h3>
                 <div class="row">
                     <div class="col-md">
-                        <img alt="placeholder" src="http://placekitten.com/200/375">
+                        <img alt="A mockup of a phone showing the photo filter app, which displays a grid of 12 pictures. Users have to choose which are photos and then submit them."
+                            src="/images/Auto_Alt_Text/photo_filter.png">
                     </div>
                     <div class="col-md-7">
                         <p><b>Problem:</b> The Computer Vision model we were using was originally trained almost
@@ -228,7 +231,60 @@
                 <p><b>Solution:</b> We created an opt-in only feedback loop that allows users to donate their images to
                     us. We made sure that we were following privacy guidelines, and that the information given to us
                     was being stored securely.</p>
-                <img class="ml-5" alt="placeholder" src="http://placekitten.com/350/250">
+                <img class="ml-5" alt="A screenshot of the donate to science feature which asks users if they would like to donate their image and description to improve the automatic alt text service."
+                    src="/images/Auto_Alt_Text/dts.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Interaction Designer section -->
+<div class="container">
+    <div class="row">
+        <div class="col-md">
+            <h2>Interaction Designers</h2>
+            <h3 class="underlined mt-3">Tasks</h3>
+            <ul class="pluslist">
+                <li>Iteratively design solutions based on research, feedback, and technical constraints</li>
+                <li>Use systems thinking to understand where the new solution fits into the broader Office app
+                    experience</li>
+                <li>Create visual and voice design that fit into Office design standards</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h3>Interaction Flow Mapping</h3>
+            <p>Our new Alt Text solution reduced the task flow of adding alt text to an image from 6 steps to a single
+                step.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8 mx-auto">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="/images/Auto_Alt_Text/original_flow.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="/images/Auto_Alt_Text/new_flow.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="/images/Auto_Alt_Text/integrated_flow.png" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <svg viewBox="0 -256 1792 1792" width="50" height="100">
+                        <path d="m 1099,704 q 0,-52 -37,-91 L 410,-38 q -37,-37 -90,-37 -53,0 -90,37 l -76,75 q -37,39 -37,91 0,53 37,90 l 486,486 -486,485 q -37,39 -37,91 0,53 37,90 l 76,75 q 36,38 90,38 54,0 90,-38 l 652,-651 q 37,-37 37,-90 z" />
+                    </svg>
+                </a>
             </div>
         </div>
     </div>
