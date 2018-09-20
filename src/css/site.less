@@ -6,6 +6,10 @@
 @lightgrey: #808080;
 @lightestgrey: #f2f2f2;
 
+@small: 575px;
+@medium: 768px;
+@large: 1100px;
+
 html,
 body {
   margin: 0;
@@ -125,7 +129,7 @@ strong {
   // Top and bottom padding 100px, left and right 0px
   padding: 100px 0;
 
-  @media (max-width: 575px) {
+  @media (max-width: @small) {
     padding: 50px 20px;
   }
 }
@@ -175,7 +179,7 @@ footer {
     box-sizing: content-box;
     width: 100%;
 
-    @media (max-width: 1100px) {
+    @media (max-width: @large) {
       margin-top: 40px;
 
       &:first-child {
@@ -184,7 +188,7 @@ footer {
     }
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: @large) {
     .row .footer-col {
       &:nth-child(1) {
         padding-left: 3%;
@@ -220,7 +224,7 @@ footer {
 }
 
 // column divider line
-@media (min-width: 768px) {
+@media (min-width: @medium) {
   .coldivider {
     border-left: 1px solid @darkgrey;
     padding-left: 50px;
@@ -260,6 +264,56 @@ footer {
       text-align: center;
       top: 14px;
       width: 16px;
+    }
+  }
+}
+
+#carousel-diagrams {
+  .carousel-control-prev {
+    top: -30px;
+  }
+
+  .carousel-control-next {
+    top: -30px;
+  }
+
+  @media (min-width: @small) {
+    .carousel-control-prev {
+      top: -170px;
+    }
+
+    .carousel-control-next {
+      top: -170px;
+    }
+  }
+
+  @media (min-width: @medium) {
+    .carousel-control-prev {
+      left: -100px;
+    }
+
+    .carousel-control-next {
+      right: -100px;
+    }
+  }
+
+  .carousel-indicators {
+    @media (max-width: @small) {
+      display: none;
+    }
+
+    position: static;
+    margin: 25px auto;
+
+    li {
+      width: 180px;
+      height: auto;
+      outline: 1px solid @lightgrey;
+      margin: 0 10px;
+
+      &.active {
+        outline: 2px solid @darkgrey;
+      }
     }
   }
 }
