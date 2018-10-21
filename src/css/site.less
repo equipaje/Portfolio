@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   // light: 300, regular: 400, medium:500,
   // semi-bold:600, bold: 700
 }
@@ -55,7 +55,6 @@ h4 {
   text-transform: uppercase;
   font-weight: 500;
   color: #808080;
-  margin-top: 25px;
   margin-bottom: 3px;
 }
 
@@ -71,12 +70,20 @@ p {
   font-weight: 300;
   padding: 0;
   margin: 0;
+
+  &.emphasized {
+    font-weight: 600;
+  }
 }
 
 small {
   font-size: 14px;
   font-weight: 300;
   display: block;
+
+  & + h4 {
+    margin-top: 25px;
+  }
 }
 
 .smallest {
@@ -106,7 +113,7 @@ ul {
 
   &.pluslist {
     li:before {
-      content: "+";
+      content: '+';
       margin-right: 4px;
     }
   }
@@ -316,4 +323,12 @@ footer {
       }
     }
   }
+}
+
+.container-assist-header {
+  background-image: url(/images/Assist/title.png);
+  background-position: 100% 0;
+  background-size: contain;
+  height: 90vh;
+  background-repeat: no-repeat;
 }
