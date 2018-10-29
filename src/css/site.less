@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   // light: 300, regular: 400, medium:500,
   // semi-bold:600, bold: 700
 }
@@ -76,6 +76,24 @@ p {
   }
 }
 
+.btn-teal {
+  background-color: @teal;
+  color: white;
+  margin-top: 15px;
+}
+
+.btn-yellow {
+  background-color: @yellow;
+  color: white;
+  margin-top: 15px;
+}
+
+.btn-darkgrey {
+  background-color: @darkgrey;
+  color: white;
+  margin-top: 15px;
+}
+
 small {
   font-size: 14px;
   font-weight: 300;
@@ -113,7 +131,7 @@ ul {
 
   &.pluslist {
     li:before {
-      content: '+';
+      content: "+";
       margin-right: 4px;
     }
   }
@@ -151,6 +169,13 @@ strong {
     font-size: 15px;
     margin-bottom: 7px;
   }
+}
+
+//home container
+.container-home {
+  background: url(/images/Home/desk.png) @darkgrey;
+  background-size: cover;
+  height: 85vh;
 }
 
 // dark grey background
@@ -331,4 +356,25 @@ footer {
   background-size: contain;
   height: 90vh;
   background-repeat: no-repeat;
+}
+
+.card-teal {
+  background: @lightestgrey;
+  height: 300px;
+  border-top-color: @teal;
+  border-top-width: 15px;
+}
+
+.card-yellow {
+  background: @lightestgrey;
+  height: 300px;
+  border-top-color: @yellow;
+  border-top-width: 15px;
+}
+
+.card-darkgrey {
+  background: @lightestgrey;
+  height: 300px;
+  border-top-color: @darkgrey;
+  border-top-width: 15px;
 }
