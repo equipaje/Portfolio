@@ -214,7 +214,7 @@ strong {
   background: url(/images/Home/desk.png) @darkgrey;
   background-size: cover;
   background-position: 0% 50%;
-  height: 85vh;
+  height: 75vh;
 }
 
 //top, right, bottom, left padding
@@ -293,6 +293,48 @@ footer {
         width: 20%;
       }
     }
+  }
+}
+
+// nav
+.navbar {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding-left: 20px;
+  padding-right: 30px;
+
+  .links a {
+     margin-left: 20px;
+     position: relative;
+     fill: @darkgrey;
+     top: 0;
+     transition: all .3s;
+     padding-bottom: 20px;
+
+     &:hover {
+
+      &.twitter {
+        fill: #38A1F3;
+      }      
+
+      &.linkedin {
+        fill: #0077B5;
+      }
+
+      &.github {
+        fill: #333;
+      }
+
+      &.instagram {
+        fill: #e1306c;
+      }
+       
+       top: -3px;
+     }
+
+  }
+
+  & + div {
+    margin-top: 57px;
   }
 }
 
