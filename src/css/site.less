@@ -458,11 +458,23 @@ footer {
   background-repeat: no-repeat;
 }
 
-.card-teal {
+.card-project {
   background: @lightestgrey;
   height: 300px;
-  border-top-color: @teal;
   border-top-width: 15px;
+  box-shadow: 1px 1px 17px -2px #ddd;
+}
+
+.card-teal {
+  border-top-color: @teal;
+}
+
+.card-yellow {
+  border-top-color: @yellow;
+}
+
+.card-darkgrey {
+  border-top-color: @darkgrey;
 }
 
 .card-teal-horizontal {
@@ -471,18 +483,44 @@ footer {
   border-left-width: 15px;
 }
 
-.card-yellow {
-  background: @lightestgrey;
-  height: 300px;
-  border-top-color: @yellow;
-  border-top-width: 15px;
+.more-projects {
+  padding: 10px 60px;
 }
 
-.card-darkgrey {
-  background: @lightestgrey;
-  height: 300px;
-  border-top-color: @darkgrey;
-  border-top-width: 15px;
+.project-summary-card {
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-left: 20px solid @teal;
+  box-shadow: 1px 1px 5px #dad8d8;
+  border-radius: 5px;
+  width: 92%;
+  margin: 0 auto;
+
+  > div {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  .project-summary-img {
+    width: 30%;
+    background-color: #f2f2f2;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+
+    &.cams {
+      background-image: url(/images/EQ_Assistant/Logo.png);
+      background-position-y: 45%;
+    }
+
+    &.ink-editor {
+      background-image: url(/images/Home/Elise_image.png);
+      background-position-y: 50%;
+    }
+  }
+
+  .project-summary-description {
+    width: 69%;
+    padding: 30px 20px;
+  }
 }
-
-
