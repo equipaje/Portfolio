@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   // light: 300, regular: 400, medium:500,
   // semi-bold:600, bold: 700
 }
@@ -127,7 +127,6 @@ p {
 .btn-resume {
   background-color: @darkgrey;
   color: white;
-  margin-top: 15px;
   height: 30px;
   line-height: 15px;
   border-color: white;
@@ -176,9 +175,14 @@ ul {
   padding: 0;
 
   &.pluslist {
-    li:before {
-      content: "+";
-      margin-right: 4px;
+    li {
+      margin-left: 14px;
+      text-indent: -14px;
+
+      &:before {
+        content: '+';
+        margin-right: 4px;
+      }
     }
   }
 }
@@ -315,21 +319,20 @@ footer {
   padding-right: 30px;
 
   .links a {
-     margin-left: 20px;
-     position: relative;
-     fill: @darkgrey;
-     top: 0;
-     transition: all .3s;
-     padding-bottom: 20px;
+    margin-left: 20px;
+    position: relative;
+    fill: @darkgrey;
+    top: 0;
+    transition: all 0.3s;
+    padding-bottom: 20px;
 
-     &:hover {
-
+    &:hover {
       &.twitter {
-        fill: #38A1F3;
-      }      
+        fill: #38a1f3;
+      }
 
       &.linkedin {
-        fill: #0077B5;
+        fill: #0077b5;
       }
 
       &.github {
@@ -339,10 +342,14 @@ footer {
       &.instagram {
         fill: #e1306c;
       }
-       
-       top: -3px;
-     }
 
+      top: -3px;
+    }
+
+    &:focus {
+      top: 0;
+      fill: @darkgrey;
+    }
   }
 
   & + div {
@@ -450,19 +457,37 @@ footer {
   }
 }
 
-.container-assist-header {
-  background-image: url(/images/Assist/title.png);
-  background-position: 100% 0;
-  background-size: contain;
-  height: 90vh;
-  background-repeat: no-repeat;
+@media (min-width: @large) {
+  .container-assist-header {
+    background-image: url(/images/Assist/title.png);
+    background-position: 100% 0;
+    background-size: contain;
+    height: 90vh;
+    background-repeat: no-repeat;
+  }
 }
 
 .card-project {
   background: @lightestgrey;
-  height: 300px;
+  height: 240px;
   border-top-width: 15px;
   box-shadow: 1px 1px 17px -2px #ddd;
+
+  @media (min-width: @medium) {
+    height: 270px;
+  }
+
+  @media (min-width: @large) {
+    height: 300px;
+  }
+
+  .btn {
+    width: 50%;
+
+    @media (min-width: @medium) {
+      width: 75%;
+    }
+  }
 }
 
 .card-teal {
@@ -488,7 +513,7 @@ footer {
 }
 
 .project-summary-card {
-  border: 1px solid rgba(0, 0, 0, .125);
+  border: 1px solid rgba(0, 0, 0, 0.125);
   border-left: 20px solid @teal;
   box-shadow: 1px 1px 5px #dad8d8;
   border-radius: 5px;
