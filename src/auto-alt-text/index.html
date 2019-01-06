@@ -5,7 +5,7 @@
             <h1>Automatic Alt Text</h1>
             <h2 class="h5 mt-3">Redesigning Alt Text for Microsoft Office</h2>
             <img class="mt-5" alt="Mockup of a computer with auto alt text in PowerPoint captioning a photo of two polar bears."
-                src="/images/Auto_Alt_Text/title_image.png">
+                src="/images/Auto_Alt_Text/title_image.jpg" width="800">
         </div>
     </div>
 </div>
@@ -55,19 +55,23 @@
     </div>
     <div class="row">
         <div class="col-sm-7">
-            <p>Alternative text is critical to helping people with vision impairments and cognitive disabilities
+            <p>Alternative text, commonly referred to as alt text, is critical to helping people with vision
+                impairments and cognitive disabilities
                 understand graphical content. While emphasis on accessibility is increasing across the tech industry,
                 there is still too much digital content that is inaccessible.</p>
             <br>
-            <p>For more than a decade, Microsoft Office employed an alt text experience that was difficult to find,
-                difficult to use, and resulted in poor reading experiences for people who needed it most.</p>
+            <p> For more than a decade, Microsoft Office employed an alt text authoring experience that was difficult
+                to find and use for people trying to make accessible content. Moreover, it resulted in a poor reading
+                experience for people who rely on screen readers to consume content in an increasingly digital world.
+            </p>
             <br>
-            <p>In an effort to make the digital world more accessible, I set out to improve alt text creation and
-                consumption in Office.</p>
+            <p>In an effort to make the digital world more accessible, I set out to improve and reimagine the alt text
+                creation and consumption experience in Office.
+            </p>
         </div>
-        <div class="col text-center">
+        <div class="col offset-1">
             <img alt="Screenshot of the original alt text UI with a title field and a description field beneath a series of menus."
-                src="/images/Auto_Alt_Text/fotp.png">
+                src="/images/Auto_Alt_Text/fotp.jpg" width="250">
         </div>
         <div class="row mt-4 mt-md-5">
             <div class="col-sm">
@@ -123,25 +127,25 @@
                 <div class="row">
                     <div class="col ml-5">
                         <h3>Key Findings</h3>
-                        <h3 class="underlined">Consuming Alt Text</h3>
+                        <h4 class="mt-4">Consuming Alt Text</h4>
                         <ul class="pluslist">
-                            <li><b>Inconsistent Experience:</b> Alt Text is not always read in a consistent way with
+                            <li><b>Inconsistent experience:</b> Alt text is not always read in a consistent way with
                                 screen readers and other assistive technologies</li>
-                            <li><b>Not Enough Alt Text:</b> Most documents don't have alt text at all, which causes
+                            <li><b>Not enough alt text:</b> Most documents don't have alt text at all, which causes
                                 frustration</b></li>
                         </ul>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col ml-5">
-                        <h3 class="underlined mt-3">Authoring Alt Text</h3>
+                        <h4 class="mt-4">Authoring Alt Text</h4>
                         <ul class="pluslist">
-                            <li><b>Difficult to Access:</b> The current input is too difficult to get to, causing a lot
+                            <li><b>Difficult to access:</b> The current input is too difficult to get to, causing a lot
                                 of wasted time navigating through menus repeatedly</li>
-                            <li><b>Authoring is Confusing</b> Alt Text input currently allows for both a title and a
+                            <li><b>Authoring is confusing:</b> Alt text input currently allows for both a title and a
                                 description, but most screen readers only read the description reliably. This causes
                                 confusion around which field should be used and when</b></li>
-                            <li><b>Unsure How to Write Alt Text:</b> There is not enough guidance to support writing
+                            <li><b>Unsure how to write alt text:</b> There is not enough guidance to support writing
                                 high quality alt text</li>
                         </ul>
                     </div>
@@ -158,7 +162,7 @@
             <h2>Ideation</h2>
         </div>
     </div>
-    <div class="row">
+    <div class="row align-items-center">
         <div class="col-md-7">
             <p>While ideating solutions to make alt text easier to access, understand, and create, I came across the
                 newly released Microsoft Cognitive Services APIs.</p>
@@ -171,176 +175,221 @@
             <p>I pitched the idea, and worked with several engineers to prototype a proof of concept during a
                 hackathon. The project ultimately was funded by our team.</p>
         </div>
-        <div class="col">
-            <img class="ml-5" alt="Microsoft Cognitive Services logo" src="/images/Auto_Alt_Text/cog_sci.png"> </div>
+        <div class="col offset-1 text-center">
+            <img alt="Microsoft Cognitive Services logo" src="/images/Auto_Alt_Text/cog_sci.svg" width="300">
+        </div>
     </div>
 </div>
 
-<!-- Project Manager -->
+<!-- Roles -->
 <div class="container-grey">
     <div class="container">
         <div class="row">
-            <div class="col-md">
-                <h2>Project Manager</h2>
-                <h3 class="underlined mt-3">Tasks</h3>
+            <div class="col">
+                <h2>My Role</h2>
+                <p>During the design and implemtation for this project, I filled both a project management and
+                    interaction design role, each with distinct responsibilities.</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-5">
+                <h3 class="underlined">Project Manager</h3>
                 <ul class="pluslist">
                     <li>Coordinating work across teams and organizations within Microsoft</li>
                     <li>Solving technical problems</li>
                     <li>Driving timelines for the project</li>
-                    <li>Ensuring high standard and compliance for privacy, security, globalization, and accessibility</li>
+                    <li>Ensuring high standard and compliance for privacy, security, globalization, and
+                        accessibility</li>
                 </ul>
             </div>
-            <div class="col-md offset-1">
-                <h3>Fostering Trust</h3>
-                <p><b>Problem:</b> Machine Learning models are not perfect, and it might be difficult for someone who
-                    is blind to understand whether or not they should trust a caption.</p>
-                <br>
-                <p><b>Solution:</b> Once a description was generated, we appended text that marks the description as
-                    being machine generated.</p>
-                <br>
-                <p>We also included a confidence rating so that screen reader users can make better decisions about
-                    trusting the alt text.</p>
-                <br>
-                <h5>"Description generated with very high confidence"</h5>
-                <!--Style this better-->
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-md">
-                <h3>Improving Machine Learning Models</h3>
-                <div class="row">
-                    <div class="col-md">
-                        <img alt="A mockup of a phone showing the photo filter app, which displays a grid of 12 pictures. Users have to choose which are photos and then submit them."
-                            src="/images/Auto_Alt_Text/photo_filter.png">
-                    </div>
-                    <div class="col-md">
-                        <p><b>Problem:</b> The Computer Vision model we were using was originally trained almost
-                            exclusively with social media content. It was extremely bad at recognizing the professional
-                            content that someone would insert into an Office document. We thought this problem might
-                            block the entire project from continuing.</p>
-                        <br>
-                        <p><b>Solution:</b> We built a web app to help curate a set of nearly 100,000 photos to be used
-                            to train the image captioning Machine Learning model. When re-trained, the model
-                            demonstrated a 30% increase in coverage in describing a random set of professional photos.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md offset-1">
-                <h3>Gathering Feedback</h3>
-                <p><b>Problem:</b> A key component of intelligent systems is collecting feedback so that the system can
-                    improve over time. There are many privacy regulations that prevent gathering the data we would need
-                    to improve Automatic Alt Text.</p>
-                <p><b>Solution:</b> We created an opt-in only feedback loop that allows users to donate their images to
-                    us. We made sure that we were following privacy guidelines, and that the information given to us
-                    was being stored securely.</p>
-                <img class="ml-5 mt-5" alt="A screenshot of the donate to science feature which asks users if they would like to donate their image and description to improve the automatic alt text service."
-                    src="/images/Auto_Alt_Text/dts.png">
+            <div class="col-5 offset-1">
+                <h3 class="underlined">Interaction Designer</h3>
+                <ul class="pluslist">
+                    <li>Iteratively design solutions based on research, feedback, and technical constraints</li>
+                    <li>Use systems thinking to understand where the new solution fits into the broader Office app
+                        experience</li>
+                    <li>Create visual and voice design that fit into Office design standards</li>
+                </ul>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Interaction Designer section -->
+<!-- Project Manager -->
+
 <div class="container">
     <div class="row">
-        <div class="col">
-            <h2>Interaction Designer</h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-5">
-            <h3 class="underlined mt-3">Tasks</h3>
-            <ul class="pluslist">
-                <li>Iteratively design solutions based on research, feedback, and technical constraints</li>
-                <li>Use systems thinking to understand where the new solution fits into the broader Office app
-                    experience</li>
-                <li>Create visual and voice design that fit into Office design standards</li>
-            </ul>
-        </div>
-        <div class="col-md offset-1">
-            <h3>Design for Being Wrong</h3>
-            <p>During this work, we defined a set of design principles for intelligence in Office:</p>
-            <ul class="pluslist">
-                <li>Be transparent to authors and readers when something is generated by a machine rather than a human</li>
-                <li>Do not break or interrupt existing taskflows in Office apps</li>
-                <li>Intelligence should augment a user's existing taskflow rather than create a new one</li>
-                <li>Always give the user an opportunity to provide feedback to improve the system</li>
-            </ul>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <h3 class="mt-5">Interaction Flow Mapping</h3>
-            <p>Our new Alt Text solution reduced the task flow of adding alt text to an image from 6 steps to a single
-                step.</p>
+        <div class="col-md">
+            <h2>Challenges</h2>
         </div>
     </div>
     <div class="row mt-5">
-        <div class="col-md-8 mx-auto">
-            <div id="carousel-diagrams" class="carousel slide" data-ride="carousel" data-interval="false">
-                <div class="carousel-outer">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active text-center">
-                            <img class="d-block w-100" src="/images/Auto_Alt_Text/original_flow.png" alt="First slide">
-                            <br>
-                            <small>Test captions are the best captions</small>
+        <div class="col-md-2">
+            <h3>Challenges</h3>
+        </div>
+        <div class="col-md-5">
+            <ol class="fancylist fancylist-red">
+                <li>
+                    <h4>Encouraging good alt text</h4>
+                    <small class="mt-2"><b>Problem:</b> In user studies, we found that many people do not know what
+                        alt text is.
+                        We
+                        needed a
+                        prompt that conveyed purpose and helped people understand how to write good alt text.</small>
+                    <br>
+                    <small><b>Solution:</b> We interviewed accessibility experts and people with vision impairments
+                        to
+                        inform
+                        our chosen prompt. We landed on something very clear with little room for
+                        misinterpretation. We
+                        also added a length suggestion, since people we talked to identified overly long alt text
+                        as a
+                        core
+                        pain point.</small>
+                </li>
+                <li>
+                    <h4>Fostering User Trust</h4>
+                    <small class="mt-2"><b>Problem:</b> Machine Learning models are not perfect, and it might be
+                        difficult for
+                        someone
+                        who
+                        is blind to understand whether or not they should trust a caption.</small>
+                    <br>
+                    <small><b>Solution:</b> Once a description was generated, we appended text that marked the
+                        description
+                        as
+                        being machine generated. We also included a confidence rating so that screen reader
+                        users
+                        could
+                        make better decisions about trusting the alt text.</small>
+                </li>
+                <li>
+                    <h4>Gathering Feedback</h4>
+                    <small class="mt-2"><b>Problem:</b> A key component of intelligent systems is collecting
+                        feedback so that
+                        the
+                        system
+                        can
+                        improve over time. There are many privacy regulations that prevent gathering this sort of
+                        data.</small>
+                    <br>
+                    <small><b>Solution:</b> The Computer Vision model we were using had been trained almost
+                        exclusively
+                        on
+                        social media content. In other words, it was extremely bad at recognizing the professional
+                        content
+                        that someone would insert into an Office document. We thought this might block the entire
+                        project
+                        from continuing.</small>
+                </li>
+                <li>
+                    <h4>Improving Caption Quality</h4>
+                    <small class="mt-2"><b>Problem:</b> A key component of intelligent systems is collecting
+                        feedback so that
+                        the
+                        system
+                        can
+                        improve over time. There are many privacy regulations that prevent gathering this sort of
+                        data.</small>
+                    <br>
+                    <small><b>Solution:</b> We built a web app to help curate a set of nearly 100,000 photos to be
+                        used
+                        to
+                        train the image captioning Machine Learning model. When re-trained, the model demonstrated
+                        a
+                        30%
+                        increase in accuracy for describing professional content.</small>
+                </li>
+            </ol>
+        </div>
+        <div class="col text-center">
+            <img alt="Graphic showing the new alt text pane with numbered components corresponding to listed items. 1: A new prompt reading How would you describe this picture and its context to someone who is blind? 1-2 sentences recommended. 2: Appended text to an automatic caption that reads Automatically Generated with High Confidence. 3: A prompt asking users to donate image to science. The prompt has a beaker and a button to agree to donate the image."
+                src="/images/Auto_Alt_Text/challenges_pane.jpg" width="320">
+            <img class="mt-5" alt="Graphic showing the photo filter app, which shows a grid of images. The user chooses the photographs in the set and submits them."
+                src="/images/Auto_Alt_Text/challenges_photofilter.jpg" width="300">
+        </div>
+    </div>
+</div>
+
+<!-- Interaction Flow Mapping -->
+<div class="container-grey">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Interaction Flow Mapping</h2>
+                <p>Our new Alt Text solution reduced the task flow of adding alt text to an image from 6 steps to a
+                    single
+                    step.</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-11 mx-auto">
+                <div id="carousel-diagrams" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel-outer">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active text-center">
+                                <img class="d-block w-100 p-5 bg-white" src="/images/Auto_Alt_Text/original_flow.jpg"
+                                    alt="First slide">
+                                <br>
+                                <small>original task flow with 6 distinct steps to add alt text</small>
+                            </div>
+                            <div class="carousel-item text-center">
+                                <img class="d-block w-100 p-5 bg-white" src="/images/Auto_Alt_Text/new_flow.jpg" alt="Second slide">
+                                <br>
+                                <small>Automatic Alt Text reduces alt text task flow to as little as one step</small>
+                            </div>
+                            <div class="carousel-item text-center">
+                                <img class="d-block w-100 p-5 bg-white" src="/images/Auto_Alt_Text/integrated_flow.jpg"
+                                    alt="Third slide">
+                                <br>
+                                <small>Automatic Alt Text is seamlessly integrated into the insert picture task flow</small>
+                            </div>
                         </div>
-                        <div class="carousel-item text-center">
-                            <img class="d-block w-100" src="/images/Auto_Alt_Text/new_flow.png" alt="Second slide">
-                            <br>
-                            <small>Test captions are the best captions</small>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img class="d-block w-100" src="/images/Auto_Alt_Text/integrated_flow.png" alt="Third slide">
-                            <br>
-                            <small>Test captions are the best captions</small>
-                        </div>
+                        <a class="carousel-control-prev" href="#carousel-diagrams" role="button" data-slide="prev">
+                            <svg height="25" width="25" xmlns='http://www.w3.org/2000/svg' fill='#59565f' viewBox='0 0 8 8'>
+                                <path d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z' /></svg>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-diagrams" role="button" data-slide="next">
+                            <svg height="25" width="25" xmlns='http://www.w3.org/2000/svg' fill='#59565f' viewBox='0 0 8 8'>
+                                <path d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z' /></svg>
+                        </a>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-diagrams" data-slide-to="0" class="active">
+                                <img class="d-block" src="/images/Auto_Alt_Text/original_flow.jpg" alt="First slide">
+                            </li>
+                            <li data-target="#carousel-diagrams" data-slide-to="1">
+                                <img class="d-block" src="/images/Auto_Alt_Text/new_flow.jpg" alt="First slide">
+                            </li>
+                            <li data-target="#carousel-diagrams" data-slide-to="2">
+                                <img class="d-block" src="/images/Auto_Alt_Text/integrated_flow.jpg" alt="First slide">
+                            </li>
+                        </ol>
                     </div>
-                    <a class="carousel-control-prev" href="#carousel-diagrams" role="button" data-slide="prev">
-                        <svg height="25" width="25" xmlns='http://www.w3.org/2000/svg' fill='#59565f' viewBox='0 0 8 8'>
-                            <path d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z' /></svg>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel-diagrams" role="button" data-slide="next">
-                        <svg height="25" width="25" xmlns='http://www.w3.org/2000/svg' fill='#59565f' viewBox='0 0 8 8'>
-                            <path d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z' /></svg>
-                    </a>
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-diagrams" data-slide-to="0" class="active">
-                            <img class="d-block" src="/images/Auto_Alt_Text/original_flow.png" alt="First slide">
-                        </li>
-                        <li data-target="#carousel-diagrams" data-slide-to="1">
-                            <img class="d-block" src="/images/Auto_Alt_Text/original_flow.png" alt="First slide">
-                        </li>
-                        <li data-target="#carousel-diagrams" data-slide-to="2">
-                            <img class="d-block" src="/images/Auto_Alt_Text/original_flow.png" alt="First slide">
-                        </li>
-                    </ol>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-
 <!-- Visual and Voice design -->
-<div class="container-grey">
-    <div class="container">
-        <div class="row">
-            <div class="col-8">
-                <h2>Visual and Voice Design</h2>
-                <p>Visual design and voice design fell in line with Office Design Standards, while extending the
-                    standards to a novel scenario. UI text was written to address the shortcomings of the current alt
-                    text experience, as discovered from our research.</p>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <h2>Visual and Voice Design</h2>
+            <p>Visual design and voice design fell in line with Office Design Standards, while extending the
+                standards to a novel scenario. UI text was written to address the shortcomings of the current
+                alt
+                text experience, as discovered from our research.</p>
         </div>
-        <div class="row">
-            <div class="col text-center mt-5">
-                <img alt="Animtaed gif showing the alt text design." src="/images/Auto_Alt_Text/final_design.gif">
-                <!--GET THE CORRECT IMAGE AND UPDATE ALT TEXT-->
-            </div>
+    </div>
+    <div class="row">
+        <div class="col text-center mt-5">
+            <img alt="Animtaed gif showing the alt text design." src="/images/Auto_Alt_Text/final_design.gif">
+            <!--GET THE CORRECT IMAGE AND UPDATE ALT TEXT-->
         </div>
     </div>
 </div>
+
 
 
 
@@ -348,18 +397,19 @@
 <!-- Impact -->
 
 
-<div class="container" style="margin-bottom: 0">
-    <div class="row">
-        <div class="col-md-9">
-            <h2>Impact</h2>
-            <h5 class="mt-5">Today, the Automatic Alt Text feature adds descriptions to <br><b>more than 2 million
-                    photos every day</b>, helping to give equal access to documents for everyone.</h5>
+<div class="container-grey">
+    <div class="container" style="margin-bottom: 0">
+        <div class="row">
+            <div class="col-md-9">
+                <h2>Impact</h2>
+                <h5 class="mt-5">Today, the Automatic Alt Text feature adds descriptions to <br><b>more than 2 million
+                        photos every day</b>, helping to give equal access to documents for everyone.</h5>
+            </div>
         </div>
     </div>
-</div>
-
-<div class="row">
-    <div class="col-md text-center">
-        <img alt="image grid..." src="/images/Auto_Alt_Text/image_grid_wide.png" width=80%>
+    <div class="row">
+        <div class="col-md text-center">
+            <img alt="image grid..." src="/images/Auto_Alt_Text/image_grid_wide.png" width=80%>
+        </div>
     </div>
 </div>

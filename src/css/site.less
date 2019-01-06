@@ -164,6 +164,10 @@ ol {
 
   li {
     padding: 10px;
+
+    &:first-child {
+      padding-top: 0;
+    }
   }
 }
 
@@ -378,7 +382,7 @@ footer {
   padding: 0;
   margin: 0;
 
-  h4 {
+  h4, h5 {
     display: inline;
     margin-left: 15px;
   }
@@ -391,18 +395,31 @@ footer {
     position: relative;
     counter-increment: fancycounter;
 
+    &:first-child {
+      &::before {
+        top: 3px;
+      }
+    }
+
     &::before {
       background-color: #cca52c;
       border-radius: 30px;
       color: #fff;
       content: counter(fancycounter);
       font-size: 11px;
-      height: 16px;
+      height: 18px;
+      padding-top: 1px;
       left: 0;
       position: absolute;
       text-align: center;
       top: 14px;
-      width: 16px;
+      width: 18px;
+    }
+  }
+
+  &.fancylist-red {
+    li::before {
+      background-color: #CA4535;
     }
   }
 }
