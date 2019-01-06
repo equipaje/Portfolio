@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   // light: 300, regular: 400, medium:500,
   // semi-bold:600, bold: 700
 }
@@ -184,7 +184,7 @@ ul {
       text-indent: -14px;
 
       &:before {
-        content: '+';
+        content: "+";
         margin-right: 4px;
       }
     }
@@ -382,7 +382,8 @@ footer {
   padding: 0;
   margin: 0;
 
-  h4, h5 {
+  h4,
+  h5 {
     display: inline;
     margin-left: 15px;
   }
@@ -419,30 +420,12 @@ footer {
 
   &.fancylist-red {
     li::before {
-      background-color: #CA4535;
+      background-color: #ca4535;
     }
   }
 }
 
 #carousel-diagrams {
-  .carousel-control-prev {
-    top: -30px;
-  }
-
-  .carousel-control-next {
-    top: -30px;
-  }
-
-  @media (min-width: @small) {
-    .carousel-control-prev {
-      top: -170px;
-    }
-
-    .carousel-control-next {
-      top: -170px;
-    }
-  }
-
   @media (min-width: @medium) {
     .carousel-control-prev {
       left: -100px;
@@ -454,21 +437,34 @@ footer {
   }
 
   .carousel-indicators {
-    @media (max-width: @small) {
-      display: none;
-    }
-
     position: static;
-    margin: 25px auto;
+    margin: 15px auto;
 
     li {
-      width: 180px;
       height: auto;
-      outline: 1px solid @lightgrey;
-      margin: 0 10px;
+      width: auto;
+      margin: 0 5px;
+      background-color: transparent;
 
       &.active {
-        outline: 2px solid @darkgrey;
+        .btn {
+          background-color: @darkgrey;
+          color: #fff;
+        }
+      }
+
+      .btn {
+        display: block;
+        font-size: 12px;
+        background-color: transparent;
+        border: 1px solid @darkgrey;
+        width: 120px;
+        padding: 2px 0;
+
+        span {
+          outline: none;
+          padding: 4px 30px;
+        }
       }
     }
   }

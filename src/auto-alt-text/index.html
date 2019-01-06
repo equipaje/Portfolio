@@ -112,16 +112,17 @@
             <div class="col-md-5">
                 <h3>Methods</h3>
                 <h4 class="mt-4">Interviews</h4>
-                <p>I interviewed people with vision impairments, accessibility experts, and people who make
+                <small>I interviewed people with vision impairments, accessibility experts, and people who make
                     accessible content as part of their job (i.e. government agency employees) to understand how people
-                    create and consume alt text.</p>
+                    create and consume alt text.</small>
                 <h4 class="mt-4">Competitive Analysis</h4>
-                <p>I analyzed alt text experiences across different productivity and social media applications to see
-                    how others have approached this problem space.</p>
+                <small>I analyzed alt text experiences across different productivity and social media applications to
+                    see
+                    how others have approached this problem space.</small>
                 <h4 class="mt-4">Cognitive Walkthrough</h4>
-                <p>I completed a detailed walkthrough of the existing alt text experience in Office to identify
+                <small>I completed a detailed walkthrough of the existing alt text experience in Office to identify
                     strengths and weaknesses
-                    of the design.</p>
+                    of the design.</small>
             </div>
             <div class="col-md mt-5 mt-md-0">
                 <div class="row">
@@ -132,7 +133,7 @@
                             <li><b>Inconsistent experience:</b> Alt text is not always read in a consistent way with
                                 screen readers and other assistive technologies</li>
                             <li><b>Not enough alt text:</b> Most documents don't have alt text at all, which causes
-                                frustration</b></li>
+                                frustration</li>
                         </ul>
                     </div>
                 </div>
@@ -144,7 +145,7 @@
                                 of wasted time navigating through menus repeatedly</li>
                             <li><b>Authoring is confusing:</b> Alt text input currently allows for both a title and a
                                 description, but most screen readers only read the description reliably. This causes
-                                confusion around which field should be used and when</b></li>
+                                confusion around which field should be used and when</li>
                             <li><b>Unsure how to write alt text:</b> There is not enough guidance to support writing
                                 high quality alt text</li>
                         </ul>
@@ -186,7 +187,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2>My Role</h2>
+                <h2>My Roles</h2>
                 <p>During the design and implemtation for this project, I filled both a project management and
                     interaction design role, each with distinct responsibilities.</p>
             </div>
@@ -215,7 +216,7 @@
     </div>
 </div>
 
-<!-- Project Manager -->
+<!-- Challenges -->
 
 <div class="container">
     <div class="row">
@@ -224,10 +225,7 @@
         </div>
     </div>
     <div class="row mt-5">
-        <div class="col-md-2">
-            <h3>Challenges</h3>
-        </div>
-        <div class="col-md-5">
+        <div class="col-md-5 offset-1">
             <ol class="fancylist fancylist-red">
                 <li>
                     <h4>Encouraging good alt text</h4>
@@ -302,10 +300,10 @@
                 </li>
             </ol>
         </div>
-        <div class="col text-center">
-            <img alt="Graphic showing the new alt text pane with numbered components corresponding to listed items. 1: A new prompt reading How would you describe this picture and its context to someone who is blind? 1-2 sentences recommended. 2: Appended text to an automatic caption that reads Automatically Generated with High Confidence. 3: A prompt asking users to donate image to science. The prompt has a beaker and a button to agree to donate the image."
+        <div class="col offset-1">
+            <img class="d-block" alt="Graphic showing the new alt text pane with numbered components corresponding to listed items. 1: A new prompt reading How would you describe this picture and its context to someone who is blind? 1-2 sentences recommended. 2: Appended text to an automatic caption that reads Automatically Generated with High Confidence. 3: A prompt asking users to donate image to science. The prompt has a beaker and a button to agree to donate the image."
                 src="/images/Auto_Alt_Text/challenges_pane.jpg" width="320">
-            <img class="mt-5" alt="Graphic showing the photo filter app, which shows a grid of images. The user chooses the photographs in the set and submits them."
+            <img class="mt-5 d-block" alt="Graphic showing the photo filter app, which shows a grid of images. The user chooses the photographs in the set and submits them."
                 src="/images/Auto_Alt_Text/challenges_photofilter.jpg" width="300">
         </div>
     </div>
@@ -325,21 +323,32 @@
         <div class="row mt-5">
             <div class="col-md-11 mx-auto">
                 <div id="carousel-diagrams" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <ul class="carousel-indicators">
+                        <li data-target="#carousel-diagrams" data-slide-to="0" class="active">
+                            <button type="button" class="btn btn-sm"><span tabindex="-1">original</span></button>
+                        </li>
+                        <li data-target="#carousel-diagrams" data-slide-to="1">
+                            <button type="button" class="btn btn-sm"><span tabindex="-1">improved</span></button>
+                        </li>
+                        <li data-target="#carousel-diagrams" data-slide-to="2">
+                            <button type="button" class="btn btn-sm"><span tabindex="-1">full system</span></button>
+                        </li>
+                    </ul>
                     <div class="carousel-outer">
                         <div class="carousel-inner">
                             <div class="carousel-item active text-center">
-                                <img class="d-block w-100 p-5 bg-white" src="/images/Auto_Alt_Text/original_flow.jpg"
+                                <img class="d-block w-100" src="/images/Auto_Alt_Text/original_flow.jpg"
                                     alt="First slide">
                                 <br>
                                 <small>original task flow with 6 distinct steps to add alt text</small>
                             </div>
                             <div class="carousel-item text-center">
-                                <img class="d-block w-100 p-5 bg-white" src="/images/Auto_Alt_Text/new_flow.jpg" alt="Second slide">
+                                <img class="d-block w-100" src="/images/Auto_Alt_Text/new_flow.jpg" alt="Second slide">
                                 <br>
                                 <small>Automatic Alt Text reduces alt text task flow to as little as one step</small>
                             </div>
                             <div class="carousel-item text-center">
-                                <img class="d-block w-100 p-5 bg-white" src="/images/Auto_Alt_Text/integrated_flow.jpg"
+                                <img class="d-block w-100" src="/images/Auto_Alt_Text/integrated_flow.jpg"
                                     alt="Third slide">
                                 <br>
                                 <small>Automatic Alt Text is seamlessly integrated into the insert picture task flow</small>
@@ -353,17 +362,6 @@
                             <svg height="25" width="25" xmlns='http://www.w3.org/2000/svg' fill='#59565f' viewBox='0 0 8 8'>
                                 <path d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z' /></svg>
                         </a>
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-diagrams" data-slide-to="0" class="active">
-                                <img class="d-block" src="/images/Auto_Alt_Text/original_flow.jpg" alt="First slide">
-                            </li>
-                            <li data-target="#carousel-diagrams" data-slide-to="1">
-                                <img class="d-block" src="/images/Auto_Alt_Text/new_flow.jpg" alt="First slide">
-                            </li>
-                            <li data-target="#carousel-diagrams" data-slide-to="2">
-                                <img class="d-block" src="/images/Auto_Alt_Text/integrated_flow.jpg" alt="First slide">
-                            </li>
-                        </ol>
                     </div>
                 </div>
             </div>
