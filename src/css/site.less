@@ -21,9 +21,13 @@ body {
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 54px;
   text-transform: uppercase;
   font-weight: 400;
+
+  @media (min-width: @small) {
+    font-size: 64px;
+  }
 }
 
 h2 {
@@ -426,12 +430,19 @@ footer {
 }
 
 #carousel-diagrams {
-  @media (min-width: @medium) {
+  .carousel-control-next,
+  .carousel-control-prev {
+    display: none;
+  }
+
+  @media (min-width: @large) {
     .carousel-control-prev {
+      display: flex;
       left: -100px;
     }
 
     .carousel-control-next {
+      display: flex;
       right: -100px;
     }
   }
@@ -560,5 +571,11 @@ footer {
   .project-summary-description {
     width: 69%;
     padding: 30px 20px;
+  }
+}
+
+.w-100-mobile {
+  @media (max-width: @medium) {
+    width: 100% !important;
   }
 }

@@ -69,7 +69,7 @@
                 creation and consumption experience in Office.
             </p>
         </div>
-        <div class="col offset-1">
+        <div class="col offset-1 mt-5 mt-md-0">
             <img alt="Screenshot of the original alt text UI with a title field and a description field beneath a series of menus."
                 src="/images/Auto_Alt_Text/fotp.jpg" width="250">
         </div>
@@ -124,9 +124,9 @@
                     strengths and weaknesses
                     of the design.</small>
             </div>
-            <div class="col-md mt-5 mt-md-0">
+            <div class="col-md mt-5 mt-md-0 offset-lg-1">
                 <div class="row">
-                    <div class="col ml-5">
+                    <div class="col">
                         <h3>Key Findings</h3>
                         <h4 class="mt-4">Consuming Alt Text</h4>
                         <ul class="pluslist">
@@ -138,7 +138,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col ml-5">
+                    <div class="col">
                         <h4 class="mt-4">Authoring Alt Text</h4>
                         <ul class="pluslist">
                             <li><b>Difficult to access:</b> The current input is too difficult to get to, causing a lot
@@ -176,7 +176,7 @@
             <p>I pitched the idea, and worked with several engineers to prototype a proof of concept during a
                 hackathon. The project ultimately was funded by our team.</p>
         </div>
-        <div class="col offset-1 text-center">
+        <div class="col offset-lg-1 text-center mt-5 mt-md-0">
             <img alt="Microsoft Cognitive Services logo" src="/images/Auto_Alt_Text/cog_sci.svg" width="300">
         </div>
     </div>
@@ -193,7 +193,16 @@
             </div>
         </div>
         <div class="row mt-4">
-            <div class="col-5">
+            <div class="col-md-5">
+                <h3 class="underlined">Interaction Designer</h3>
+                <ul class="pluslist">
+                    <li>Iteratively design solutions based on research, feedback, and technical constraints</li>
+                    <li>Use systems thinking to understand where the new solution fits into the broader Office app
+                        experience</li>
+                    <li>Create visual and voice design that fit into Office design standards</li>
+                </ul>
+            </div>
+            <div class="col-md-5 offset-md-1">
                 <h3 class="underlined">Project Manager</h3>
                 <ul class="pluslist">
                     <li>Coordinating work across teams and organizations within Microsoft</li>
@@ -201,15 +210,6 @@
                     <li>Driving timelines for the project</li>
                     <li>Ensuring high standard and compliance for privacy, security, globalization, and
                         accessibility</li>
-                </ul>
-            </div>
-            <div class="col-5 offset-1">
-                <h3 class="underlined">Interaction Designer</h3>
-                <ul class="pluslist">
-                    <li>Iteratively design solutions based on research, feedback, and technical constraints</li>
-                    <li>Use systems thinking to understand where the new solution fits into the broader Office app
-                        experience</li>
-                    <li>Create visual and voice design that fit into Office design standards</li>
                 </ul>
             </div>
         </div>
@@ -225,86 +225,56 @@
         </div>
     </div>
     <div class="row mt-5">
-        <div class="col-md-5 offset-1">
+        <div class="col-md-5 offset-lg-1 mt-4 mt-md-0">
             <ol class="fancylist fancylist-red">
                 <li>
                     <h4>Encouraging good alt text</h4>
                     <small class="mt-2"><b>Problem:</b> In user studies, we found that many people do not know what
-                        alt text is.
-                        We
-                        needed a
-                        prompt that conveyed purpose and helped people understand how to write good alt text.</small>
+                        alt text is. We needed a prompt that conveyed purpose and helped people understand how to write good alt text.</small>
                     <br>
                     <small><b>Solution:</b> We interviewed accessibility experts and people with vision impairments
-                        to
-                        inform
-                        our chosen prompt. We landed on something very clear with little room for
-                        misinterpretation. We
-                        also added a length suggestion, since people we talked to identified overly long alt text
-                        as a
-                        core
-                        pain point.</small>
+                        to inform our chosen prompt. We landed on something very clear with little room for misinterpretation.
+                        We also added a length suggestion, since people we talked to identified overly long alt text
+                        as a core pain point.</small>
                 </li>
                 <li>
                     <h4>Fostering User Trust</h4>
                     <small class="mt-2"><b>Problem:</b> Machine Learning models are not perfect, and it might be
-                        difficult for
-                        someone
-                        who
-                        is blind to understand whether or not they should trust a caption.</small>
+                        difficult for someone who is blind to understand whether or not they should trust a caption.</small>
                     <br>
                     <small><b>Solution:</b> Once a description was generated, we appended text that marked the
-                        description
-                        as
-                        being machine generated. We also included a confidence rating so that screen reader
-                        users
-                        could
-                        make better decisions about trusting the alt text.</small>
+                        description as being machine generated.
+                        We also included a confidence rating so that screen reader users could make better decisions
+                        about trusting the alt text.</small>
                 </li>
                 <li>
                     <h4>Gathering Feedback</h4>
                     <small class="mt-2"><b>Problem:</b> A key component of intelligent systems is collecting
-                        feedback so that
-                        the
-                        system
-                        can
-                        improve over time. There are many privacy regulations that prevent gathering this sort of
-                        data.</small>
+                        feedback so that the system can improve over time. There are many privacy regulations that
+                        prevent gathering this sort of data.</small>
                     <br>
                     <small><b>Solution:</b> The Computer Vision model we were using had been trained almost
-                        exclusively
-                        on
-                        social media content. In other words, it was extremely bad at recognizing the professional
-                        content
-                        that someone would insert into an Office document. We thought this might block the entire
-                        project
-                        from continuing.</small>
+                        exclusively on social media content. In other words, it was extremely bad at recognizing
+                        the professional content that someone would insert into an Office document. We thought this
+                        might block the entire project from continuing.</small>
                 </li>
                 <li>
                     <h4>Improving Caption Quality</h4>
                     <small class="mt-2"><b>Problem:</b> A key component of intelligent systems is collecting
-                        feedback so that
-                        the
-                        system
-                        can
-                        improve over time. There are many privacy regulations that prevent gathering this sort of
-                        data.</small>
+                        feedback so that the system can improve over time. There are many privacy regulations that
+                        prevent gathering this sort of data.</small>
                     <br>
                     <small><b>Solution:</b> We built a web app to help curate a set of nearly 100,000 photos to be
-                        used
-                        to
-                        train the image captioning Machine Learning model. When re-trained, the model demonstrated
-                        a
-                        30%
-                        increase in accuracy for describing professional content.</small>
+                        used to train the image captioning Machine Learning model. When re-trained, the model demonstrated
+                        a 30% increase in accuracy for describing professional content.</small>
                 </li>
             </ol>
         </div>
-        <div class="col offset-1">
-            <img class="d-block" alt="Graphic showing the new alt text pane with numbered components corresponding to listed items. 1: A new prompt reading How would you describe this picture and its context to someone who is blind? 1-2 sentences recommended. 2: Appended text to an automatic caption that reads Automatically Generated with High Confidence. 3: A prompt asking users to donate image to science. The prompt has a beaker and a button to agree to donate the image."
-                src="/images/Auto_Alt_Text/challenges_pane.jpg" width="320">
-            <img class="mt-5 d-block" alt="Graphic showing the photo filter app, which shows a grid of images. The user chooses the photographs in the set and submits them."
-                src="/images/Auto_Alt_Text/challenges_photofilter.jpg" width="300">
+        <div class="col-10 col-md col-lg-5 offset-1 offset-md-0 offset-lg-1 order-first order-md-last">
+            <img class="w-100-mobile px-md-4 w-75" alt="Graphic showing the new alt text pane with numbered components corresponding to listed items. 1: A new prompt reading How would you describe this picture and its context to someone who is blind? 1-2 sentences recommended. 2: Appended text to an automatic caption that reads Automatically Generated with High Confidence. 3: A prompt asking users to donate image to science. The prompt has a beaker and a button to agree to donate the image."
+                src="/images/Auto_Alt_Text/challenges_pane.jpg">
+            <img class="mt-5 w-100-mobile px-md-4 w-75" alt="Graphic showing the photo filter app, which shows a grid of images. The user chooses the photographs in the set and submits them."
+                src="/images/Auto_Alt_Text/challenges_photofilter.jpg">
         </div>
     </div>
 </div>
@@ -340,7 +310,7 @@
                                 <a href="/images/Auto_Alt_Text/original_flow.jpg" target="_blank"> <img class="d-block w-100" src="/images/Auto_Alt_Text/original_flow.jpg"
                                     alt="First slide"></a>
                                 <br>
-                                <small>original task flow with 6 distinct steps to add alt text</small>
+                                <small>The original task flow consisting of six distinct steps to add alt text</small>
                             </div>
                             <div class="carousel-item text-center">
                                 <a href="/images/Auto_Alt_Text/new_flow.jpg" target="_blank"><img class="d-block w-100" src="/images/Auto_Alt_Text/new_flow.jpg" alt="Second slide"></a>
@@ -372,7 +342,7 @@
 <!-- Visual and Voice design -->
 <div class="container">
     <div class="row">
-        <div class="col-8">
+        <div class="col-lg-8">
             <h2>Visual and Voice Design</h2>
             <p>Visual design and voice design fell in line with Office Design Standards, while extending the
                 standards to a novel scenario. UI text was written to address the shortcomings of the current
@@ -383,13 +353,9 @@
     <div class="row">
         <div class="col text-center mt-5">
             <img alt="Animtaed gif showing the alt text design." src="/images/Auto_Alt_Text/final_design.gif">
-            <!--GET THE CORRECT IMAGE AND UPDATE ALT TEXT-->
         </div>
     </div>
 </div>
-
-
-
 
 
 <!-- Impact -->
@@ -405,9 +371,9 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row d-none d-md-block">
         <div class="col-md text-center">
-            <img alt="image grid..." src="/images/Auto_Alt_Text/image_grid_wide.png" width=80%>
+            <img alt="" src="/images/Auto_Alt_Text/image_grid_wide.png" width="80%">
         </div>
     </div>
 </div>
