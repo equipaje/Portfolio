@@ -538,38 +538,76 @@ footer {
 
 .project-summary-card {
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-left: 20px solid @teal;
+  border-top: 20px solid @teal;
   box-shadow: 1px 1px 5px #dad8d8;
   border-radius: 5px;
   width: 92%;
   margin: 0 auto;
 
+  @media (min-width: @large) {
+    border-left: 20px solid @teal;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+  }
+
+  &.lightteal {
+    border-left-color: @lightteal;
+  }
+
+  &.yellow {
+    border-left-color: @yellow;
+  }
+
+  &.darkgrey {
+    border-left-color: @darkgrey;
+  }
+
   > div {
     display: inline-block;
-    height: 100%;
     vertical-align: middle;
   }
 
   .project-summary-img {
-    width: 30%;
+    width: 100%;
     background-color: #f2f2f2;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-x: 50%;
+    height: 229px;
+
+    @media (min-width: @large) {
+      width: 30%;
+      height: 100%;
+    }
 
     &.cams {
       background-image: url(/images/More/CAMS.jpg);
-      background-position-y: 45%;
+      background-position-y: 22%;
+
+      @media (min-width: @medium) {
+        background-position-y: 42%;
+      }
     }
 
     &.ink-editor {
       background-image: url(/images/More/inkeditor.jpg);
-      background-position-y: 50%;
+      background-position-y: 66%;
+
+      @media (min-width: @medium) {
+        background-position-y: 44%;
+      }
     }
 
     &.ink-in-mail {
       background-image: url(/images/More/inkinmail.jpg);
       background-position-y: 50%;
+
+      @media (min-width: @medium) {
+        background-size: 50%;
+      }
+
+      @media (min-width: @large) {
+        background-size: 100%;
+      }
     }
 
     &.imgbot {
@@ -590,12 +628,25 @@ footer {
     &.office-remote {
       background-image: url(/images/More/officeremote.jpg);
       background-position-y: 50%;
+
+      @media (min-width: @medium) {
+        background-size: 50%;
+      }
+
+      @media (min-width: @large) {
+        background-size: 100%;
+      }
     }
   }
 
   .project-summary-description {
-    width: 69%;
+    width: 100%;
     padding: 30px 20px;
+
+    @media (min-width: @large) {
+      width: 69%;
+      height: auto;
+    }
   }
 }
 
