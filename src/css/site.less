@@ -580,6 +580,45 @@ footer {
       height: 100%;
     }
 
+    &.autoalttext {
+      background-image: url(/images/more/autoalttext_projects.jpg);
+      background-position-y: 50%;
+
+      @media (min-width: @medium) {
+        background-size: 50%;
+      }
+
+      @media (min-width: @large) {
+        background-size: 100%;
+      }
+    }
+
+    &.eqassistant {
+      background-image: url(/images/EQ_Assistant/Logo.png);
+      background-position-y: 50%;
+
+      @media (min-width: @medium) {
+        background-size: 50%;
+      }
+
+      @media (min-width: @large) {
+        background-size: 80%;
+      }
+    }
+
+    &.assist {
+      background-image: url(/images/Assist/title_square.jpg);
+      background-position-y: 50%;
+
+      @media (min-width: @medium) {
+        background-size: 50%;
+      }
+
+      @media (min-width: @large) {
+        background-size: 120%;
+      }
+    }
+
     &.cams {
       background-image: url(/images/More/CAMS.jpg);
       background-position-y: 22%;
@@ -643,6 +682,13 @@ footer {
   .project-summary-description {
     width: 100%;
     padding: 30px 20px;
+    position: relative;
+
+    .btn {
+      position: absolute;
+      bottom: 25px;
+      right: 25px;
+    }
 
     @media (min-width: @large) {
       width: 69%;
