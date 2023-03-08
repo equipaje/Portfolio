@@ -10,7 +10,7 @@
 (click clone repository in VS Code to paste URL OR)
 
 5. View > Terminal in VS Code
-6. Type git clone <paste URL>
+6. Type git clone + paste URL
 7. Go to the Explorer tab in VS code and find the folder where your stuff got saved. Open that.
 
 ----- Install Node -----
@@ -26,3 +26,5 @@
 6. Open a browser and go to localhost:8888
 
 Note: You need save a small change in the file to get localhost to work the first time
+
+---- Push live -----
