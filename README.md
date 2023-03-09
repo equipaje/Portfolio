@@ -28,3 +28,8 @@
 Note: You need save a small change in the file to get localhost to work the first time
 
 ---- Push live -----
+1. Go to Netlify
+2. Log in with Github
+3. Click on eliselivingston.design
+4. Go to "Deploys"
+5. Drag and drop the Portfolio>dist folder from your computer (probably in the documents folder) into the drag and drop area on the page
